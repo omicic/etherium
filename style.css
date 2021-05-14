@@ -9,6 +9,7 @@
     --pink: #ffe5f9;
     --gray: #e8e8fc;
     --blue: #1c1ce1;
+    --lightblue: #e1fefa;
     --lightgray: #fcfcfc;
     --fontSize: 16px;
     --padding: 50px 0;
@@ -79,10 +80,11 @@ li:hover a {
 
 button {
     padding: 10px;
-    font-size: 1rem;
+    font-size: rem;
     cursor: pointer;
     background: transparent;
     border-radius: 5px;
+    letter-spacing: 1px;
 }
 
 h2 {
@@ -94,13 +96,28 @@ h2 {
 .btnTransparent {
     background: transparent;
     border: 1px solid var(--headings);
-    transition: var(--transition);
 }
 
 .btnTransparent:hover {
+    color: var(--blue);
     border: 1px solid var(--blue);
     box-shadow: 3px 3px var(--violet);
 
+}
+
+.btnBlue {
+    background: var(--blue);
+    font-size: 300;
+    color: white;
+    border: 1px solid var(--blue);
+    transition: .1s ease;
+    margin-right: 10px;
+}
+
+.btnBlue:hover {
+    border: 1px solid var(--blue);
+    box-shadow: 3px 3px var(--violet);
+    opacity: .9;
 }
 
 /***nav***/
@@ -172,10 +189,6 @@ header {
     padding: var(--padding);
 }
 
-/* .typed-cursor {
-    display: none;
-} */
-
 .welcome h4 {
     font-weight: 300;
     margin-bottom: 30px;
@@ -219,6 +232,7 @@ header {
     padding: 50px;
     background: var(--lightgray);
     border-bottom: 1px solid var(--headings);
+
 }
 
 .cards a {
@@ -255,4 +269,62 @@ header {
 .cards p {
     color: var(--text);
     font-weight: 400;
+}
+
+/***colors***/
+.colors {
+    border-bottom: 1px solid var(--headings);
+    padding: var(--padding);
+}
+
+.colors img {
+    width: 100%;
+}
+
+.colors article {
+    flex: 0 0 50%;
+}
+
+.tirkiz {
+    background: var(--tirkiz);
+}
+
+
+.colors .text {
+    padding: 100px;
+}
+
+.colors h2 {
+    font-family: serif;
+    font-weight: 600;
+}
+
+.colors p {
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/***orange***/
+
+.orange {
+    background: var(--orange);
+}
+
+.colors:nth-child(odd) .text {
+    order: -1;
+}
+
+/***lightblue***/
+.lightblue {
+    background: var(--lightblue);
+}
+
+/***pink***/
+.pink {
+    background: var(--pink);
+}
+
+/***violet***/
+.violet {
+    background: var(--gray);
 }
